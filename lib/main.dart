@@ -13,10 +13,17 @@ class MyApp extends StatelessWidget {
   /// chamada inicial do aplicativo
   @override
   Widget build(BuildContext context) {
-    return
-      const GetMaterialApp(
-        home: HomePage(),
-        debugShowCheckedModeBanner: false,
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/home',
+      defaultTransition: Transition.native,
+      title: 'Flutter Record and Play',
+      getPages: [
+        GetPage(
+            name: '/home',
+            page: () => HomePage()
+        ),
+      ],
     );
   }
 }

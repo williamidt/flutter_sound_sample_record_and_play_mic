@@ -1,8 +1,15 @@
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
-import '../widgets/iconButton.dart';
+import 'package:flutter_sound_sample_record_and_play_mic/pages/home_controller.dart';
+import 'package:flutter_sound_sample_record_and_play_mic/widgets/iconButton.dart';
+
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  /// controller getx
+  final HomeController myHomeController = Get.find();
+
+  /// constructor
+  HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
