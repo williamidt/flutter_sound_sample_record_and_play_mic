@@ -55,10 +55,10 @@ class SoundController extends GetxController {
     if (statusstorage != PermissionStatus.granted) {
       throw RecordingPermissionException("Storage permission failed");
     }
-    PermissionStatus statusmanageexternal = await Permission.manageExternalStorage.request();
+   /* PermissionStatus statusmanageexternal = await Permission.manageExternalStorage.request();
     if (statusmanageexternal != PermissionStatus.granted) {
       throw RecordingPermissionException("Manage External Storage permission failed");
-    }
+    }*/
 
     await _audioRecorder!.openRecorder();
     await _audioRecorder!.setSubscriptionDuration(Duration(microseconds: 10));
