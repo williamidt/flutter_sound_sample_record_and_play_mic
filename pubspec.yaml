@@ -40,11 +40,11 @@ dependencies:
   get: ^4.6.5
 
   # main package flutter sound
-  flutter_sound_platform_interface: 9.2.13
-  #    path: ../../flutter_sound_platform_interface # flutter_sound_platform_interface Dir
   flutter_sound: ^9.2.13
   permission_handler: ^10.2.0
-  audio_session: ^0.1.13
+  assets_audio_player: ^3.0.6
+  path: ^1.8.0
+  intl: ^0.18.0
 
 
 dev_dependencies:
